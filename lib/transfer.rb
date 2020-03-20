@@ -26,9 +26,7 @@ def execute_transaction
     @receiver.deposit(@amount)
     @status = "complete"
   
-  binding.pry
-  
-  end
+    end
 end
 end
   
