@@ -17,7 +17,7 @@ attr_reader :sender, :receiver
    @receiver.status == "open"
  end
  end
- transfer.valid?
+ 
  
  
  
