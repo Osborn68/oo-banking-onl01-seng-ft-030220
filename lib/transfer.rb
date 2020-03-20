@@ -7,7 +7,7 @@ attr_accessor :sender, :receiver, :transfer_amount
   
  def initialize(sender, reciever, transfer_amount)
    @sender = sender
-   @reciever = receiver
+   @receiver = receiver
    @status = "pending"
    @transfer_amount = transfer_amount
  end 
