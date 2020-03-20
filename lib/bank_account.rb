@@ -1,6 +1,6 @@
 class BankAccount
 
-attr_reader :name, :display_balance
+attr_reader :name, :display_balance, :balance
 attr_writer :deposit
 
 def initialize(name)
