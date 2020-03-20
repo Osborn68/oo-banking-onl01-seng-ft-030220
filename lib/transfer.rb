@@ -17,6 +17,7 @@ attr_reader :sender, :receiver
 end
 
 def execute_transaction
-  
+  if @sender.balance < 0 || !valid?
+    
 end
   
