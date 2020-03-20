@@ -18,16 +18,13 @@ attr_reader :sender, :receiver
 end
 
 def execute_transaction
-  if @sender.balance < @amount || !valid?
-    @status = "rejected"
-    "Transaction rejected. Please check your account balance."
-  elsif @status == "complete"
-  else
-    @sender.deposit(@amount * -1)
-    @receiver.deposit(@amount)
-    @status = "complete"
-    end
-    end
+ if (@status == "pending") && valid?
+   @sender.deposit(-amount)
+   @receiver.deposit(amount)
+   @status = "complete"
+   elsif !valid?
+   @status = "rejected"
+   
     
   def reverse_transfer
     
