@@ -19,6 +19,7 @@ attr_reader :sender, :receiver
  valid?
  end
  end
+ end
  
  
   
