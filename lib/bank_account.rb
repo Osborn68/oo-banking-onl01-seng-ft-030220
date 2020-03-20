@@ -9,6 +9,11 @@ def initialize(name)
   @status = "open"
 end
 
+def deposit(amount)
+  @amount = amount
+  @balance += @amount
+end
+
 
 
 end
