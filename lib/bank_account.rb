@@ -14,6 +14,8 @@ def deposit(amount)
   @balance += @amount
 end
 
+def display_balan
+
 
 
 end
