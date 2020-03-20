@@ -16,9 +16,9 @@ attr_reader :sender, :receiver
    @sender.status == "open"
    @receiver.status == "open"
  end
+ valid?
  end
- 
- 
+ end
  
  
   
