@@ -14,7 +14,7 @@ attr_reader :sender, :receiver
  end 
  
  def valid?
-  self.sender.valid? && self.receiver.valid? && sender.balance > amount
+  self.sender.valid? && self.receiver.valid? && sender.balance >= amount
 end
 
 def execute_transaction
