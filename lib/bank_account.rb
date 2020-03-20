@@ -22,7 +22,9 @@ def valid?
   status == "open" && balance > 0 
 end
 
-def 
+def close_account
+  self.status = "closed"
+end
 
 
 
