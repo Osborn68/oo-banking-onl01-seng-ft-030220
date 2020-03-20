@@ -33,8 +33,8 @@ end
       @sender.deposit(amount)
       @receiver.deposit(-amount)
       @status = "reversed"
+    end 
+  end 
+end
       
     
-
-end
-end  
