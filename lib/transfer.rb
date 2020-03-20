@@ -20,6 +20,10 @@ def execute_transaction
   if @sender.balance < 0 || !valid?
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
-    elsif
+  else
+    @sender.deposit(@amount * -1)
+    @receiver.deposit(@amount)
+    @status = complete
+  end
 end
   
