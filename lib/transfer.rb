@@ -3,13 +3,13 @@ require 'pry'
 class Transfer
   # your code here
   
-attr_accessor :status, :transfer_amount  
+attr_accessor :status, :amount  
 attr_reader :sender, :receiver  
- def initialize(sender, receiver, transfer_amount)
+ def initialize(sender, receiver, amount)
    @sender = sender
    @receiver = receiver
    @status = "pending"
-   @transfer_amount = transfer_amount
+   @amount = amount
  end 
   
   
