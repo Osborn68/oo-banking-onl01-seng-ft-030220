@@ -11,6 +11,11 @@ attr_reader :sender, :receiver
    @status = "pending"
    @amount = amount
  end 
+ 
+ def valid?
+   @sender.status == "open"
+   @receiver.status == "open"
+ end
   
   
 end
