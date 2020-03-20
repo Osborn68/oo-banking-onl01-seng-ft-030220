@@ -26,6 +26,8 @@ def execute_transaction
     @receiver.deposit(@amount)
     @status = "complete"
     end
+    
+    
 end
 end
   
