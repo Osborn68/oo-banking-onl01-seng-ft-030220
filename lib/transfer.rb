@@ -5,6 +5,7 @@ class Transfer
   
 attr_accessor :status, :amount
 attr_reader :sender, :receiver  
+ 
  def initialize(sender, receiver, amount)
    @sender = sender
    @receiver = receiver
@@ -24,6 +25,9 @@ def execute_transaction
     @sender.deposit(@amount * -1)
     @receiver.deposit(@amount)
     @status = "complete"
+  
+  binding.pry
+  
   end
 end
 end
