@@ -13,12 +13,9 @@ attr_reader :sender, :receiver
  end 
  
  def valid?
-  self.balance > 0 && status == "open"
+  self.sender.valid? && self.receiver.valid?
 end
 
-def close_account
-  self.status = "closed"
-end
 
 end
   
