@@ -18,6 +18,7 @@ end
 
 def execute_transaction
   if @sender.balance < 0 || !valid?
-    
+    "Transaction rejected. Please check your account balance."
+    elsif
 end
   
