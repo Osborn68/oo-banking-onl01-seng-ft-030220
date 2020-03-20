@@ -3,8 +3,8 @@ require 'pry'
 class Transfer
   # your code here
   
-attr_accessor :status, :amount, :sender, :receiver  
-attr_reader 
+attr_accessor :status, :amount
+attr_reader :sender, :receiver  
  def initialize(sender, receiver, amount)
    @sender = sender
    @receiver = receiver
