@@ -17,7 +17,7 @@ attr_reader :sender, :receiver
 end
 
 def execute_transaction
-  if @sender.balance < 0 || !valid?
+  if @sender.balance < @amount || !valid?
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
   else
