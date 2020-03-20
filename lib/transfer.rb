@@ -19,6 +19,7 @@ attr_reader :sender, :receiver
  transfer.valid?
  end
  end
+ end
   
   
 end
