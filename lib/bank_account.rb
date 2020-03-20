@@ -1,7 +1,7 @@
 class BankAccount
 
-attr_reader :name
-attr_accessor :deposit, :balance, :status
+attr_reader :name, :amount
+attr_accessor :balance, :status
 
 def initialize(name)
   @name = name
