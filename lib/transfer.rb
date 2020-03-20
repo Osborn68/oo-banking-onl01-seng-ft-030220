@@ -26,8 +26,10 @@ def execute_transaction
     @receiver.deposit(@amount)
     @status = "complete"
     end
+    end
     
+  def reverse_transfer
     
-end
+
 end
   
